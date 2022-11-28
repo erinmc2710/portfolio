@@ -1,46 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+	<title>erin mcmanus portfolio</title>
 	<head>
-		<meta charset="utf-8">
-		<title>MMCC3045</title>
+		<meta charset="UTF-8">
 		<link href="Index.css" rel="stylesheet" />
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<script src="https://mmcc.mq.edu.au/mmcc3045/resources/week5/jquery-ui.js"></script>
-		<script>
-			$(document).ready(function() {
-				$('#stage').hide().fadeIn(1500);
-
-				$('#title').click(function() {
-					$('#meow').get(0).play();
-					$('#titlecat').animate({ 
-						top: "-=150"
-					})
-				})
-				$('#start').click(function() {
-					window.location = 'prologue.html'
-				})
-			});
-				
-		</script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 	</head>
 	<body>
-		<div id="stage">
-			<audio id="meow">
-				<source src="sounds/meow.wav">
-			</audio>
-			<img src="images/frontgame.png" id="frontgame">
-			<img src="images/rain.gif" id="rain">
-			<img src="images/cat.png" id="titlecat">
-			<img src ="images/title.png" id="title">
-			<button class="button" role="button" id="start"> Start </button>
+		<nav>
+		 <ul class="navbar">
+		 	<li><a href="#home">HOME</a></li>
+		 	<li><a href="#aboutme">ABOUT ME</a></li>
+		 	<li><a href="#project">PROJECT DEMO</a></li>
+		 	<li><a href="#contactme">CONTACT ME</a></li>
+		 </ul>
+		</nav>
+
+		<div id="main">
+		  <header id="home">
+		    <h1><span>I'm</span> Erin McManus.</h1>
+		    <p> Aspiring Technical Developer</p>
+		    <img src="images/me.jpg" alt="Erin McManus" width="400" height="550">
+		  </header>
+		  <div id="about">
+		    <h2>About Me</h2>
+		    <hr style="width:200px">
+		    <p>Hi! My name is Erin and welcome to my website! This website is an ongoing project and not completely polished but currently you can find information about me, my completed and upcoming projects as well as ways to contact me. So, a little about me, I'm a 22 year old Aussie girl and I have completed my Bachelor's in 2022 at Macquarie University in Media and Communications with a major in Interactive Design and a minor in Psychology. During my studies I have become experienced with the following languages and programs: </p>
+		    	<ul class="leftlist">
+		    		<li>Java</li>
+		    		<li>Javascript</li>
+		    		<li>HTML</li>
+		    		<li>CSS</li>
+		    		<li>Python</li>
+		    	</ul>
+		    	<ul class="rightlist">
+		    		<li>MAX8</li>
+		    		<li>Github</li>
+		    		<li>Unity</li>
+		    		<li>Photoshop</li>
+		    		<li>Adobe Indesign</li>
+		    	</ul>
+		    <p> I also had the opportunity to undergo an Internship in graphic design for about 3 weeks where I created logos, banners, advertisements and other branded items. </p>
+	    <h3>My Skills</h3>
+	    <p>Web Design</p>
+	    <p>Game Development</p>
+	    <p>Graphic Design</p>
+	    <p>UI/UX Design</p>
+
+		<div id="project">
+		    <h2>Project demonstration</h2>
+		    <p>click to play!</p>
+		    <div class="gallery">
+		        <img src="images/game1.png" id="whatislefttosay" onclick="window.location = '45908982/html/Index.html'">
+		 	</div>
 		</div>
-		<div id="audiocontrols">
-			<audio controls autoplay id="homepage">
-	 			<source src="sounds/homepage.mp3">
-			</audio>
-		</div>
+
+	  <div id="contact">
+	    <h2>Contact Me</h2>
+	    <div class="contactinfo">
+	      <p><i class="area"></i> Sydney, AUS</p>
+	      <p><i class="phone"></i> Phone: 0439 220 795</p>
+	      <p><i class="email"> </i> Email: erinmc2710@gmail.com</p>
+	    </div>
+	  </div>
+
 	</body>
 </html>
+
+ 
